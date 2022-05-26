@@ -7,7 +7,7 @@ body {
   height: 100vh;
 }
 .container {
-  max-width: 25%;
+  width: 25%;
   margin: 10vh auto;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   overflow: hidden;
@@ -61,13 +61,33 @@ body {
 .btn-b {
   background-color: #ff5b5b;
 }
-@media screen and (max-width: 900px) {
+@media (min-width: 800px) and (max-width: 900px) {
   .container {
-    max-width: 30%;
+    width: 40%;
   }
 }
-@media screen and (max-width: 600px) {
+@media (min-width: 700px) and (max-width: 800px) {
   .container {
-    max-width: 40%;
+    width: 40%;
+  }
+}
+@media (min-width: 600px) and (max-width: 700px) {
+  .container {
+    width: 50%;
+  }
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  .container {
+    width: 65%;
+  }
+}
+@media (min-width: 370px) and (max-width: 500px) {
+  .container {
+    width: 65%;
+  }
+}
+@media (min-width: 300px) and (max-width: 370px) {
+  .container {
+    width: 100%;
   }
 }
